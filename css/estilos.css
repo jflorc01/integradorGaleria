@@ -1,0 +1,56 @@
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10vh 70vh  150vh  10vh;
+    justify-items: stretch;
+    align-items: stretch;
+    align-content:stretch;
+    justify-content: stretch;
+    grid-template-areas: "header"
+                        "carrusel"
+                        "cuadricula"
+                        "footer";
+    border: 1px solid black;
+}
+header{
+    grid-area:header;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto 70vh ;
+    grid-template-rows: auto;
+}
+.carrusel{
+    
+    grid-area:carrusel;
+    border: 1px solid black;
+}
+.cuadricula{
+    grid-area:cuadricula;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-items:center;
+    justify-content:center;
+    align-items: center;
+    align-content:center;
+    grid-gap:50px;
+
+}
+.tarjeta{
+    width: 400px;
+    height: 300px;
+    background-color: aqua;
+    border: 1px solid black;
+}  
+.centar{
+    grid-column: 2 / 3
+}
+footer{
+    background-color: grey;
+    grid-area:footer;
+    border: 1px solid black;
+}
+.auxiliar{
+    border: 1px solid black;
+}
