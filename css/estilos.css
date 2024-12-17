@@ -20,7 +20,9 @@ header{
     grid-template-rows: auto;
 }
 .carrusel{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area:carrusel;
     border: 1px solid black;
 }
@@ -53,4 +55,76 @@ footer{
 }
 .auxiliar{
     border: 1px solid black;
+}
+
+/* Estilos del carrusel */
+.slider_container {
+    position: relative;
+    width: 60%;
+    height: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider{
+    position: relative;
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    animation: 15s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
+}
+
+.slide{
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.slide .caption{
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.348);
+    backdrop-filter: blur(10px);
+    padding: 1rem 5rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+/* Animación carrusel */
+@keyframes sliding{
+    0% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(0%);
+    }
+    35% {
+        transform: translateX(-100%);
+    }
+    65% {
+        transform: translateX(-100%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    95% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }   
 }
