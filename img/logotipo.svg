@@ -4,10 +4,10 @@
 <svg
    version="1.1"
    id="svg1"
-   width="1200"
-   height="1200"
-   viewBox="0 0 1200 1200"
-   sodipodi:docname="logotipo.svg"
+   width="305"
+   height="305"
+   viewBox="0 0 305 305"
+   sodipodi:docname="logotipo2.svg"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -27,20 +27,22 @@
      showgrid="false"
      inkscape:zoom="0.67916667"
      inkscape:cx="421.10429"
-     inkscape:cy="639.7546"
+     inkscape:cy="249.57055"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1" />
+     inkscape:current-layer="g1"
+     showguides="true"
+     inkscape:lockguides="false" />
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
      id="g1">
     <g
        id="g65"
-       transform="translate(-2.9447888,-53.006135)">
+       transform="translate(-449.07976,-449.69714)">
       <path
          style="fill:#c8edef"
          d="m 586.47239,750.83306 c -1.375,-0.20184 -5.875,-0.86213 -10,-1.46732 -9.74731,-1.43006 -27.39173,-6.80088 -37.5,-11.41469 -41.11543,-18.76671 -72.04608,-55.80815 -83.03739,-99.44258 -7.61652,-30.23686 -5.65288,-61.95837 5.66632,-91.53608 18.07138,-47.22157 58.75365,-81.50002 109.98383,-92.67122 8.80872,-1.92082 13.35062,-2.26504 29.88724,-2.26504 16.57014,0 21.07762,0.34291 30,2.28228 71.03876,15.44093 119.96508,75.45592 119.96508,147.15398 0,40.73148 -15.29949,77.55285 -44.09434,106.12209 -10.07963,10.00065 -17.38761,15.80633 -28.02796,22.26624 -15.98492,9.70467 -36.94527,17.16889 -56.48068,20.1134 -8.82105,1.32957 -29.78268,1.82472 -36.3621,0.85894 z"
