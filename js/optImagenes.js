@@ -12,20 +12,24 @@ if(!fs.existsSync(outputDir)){
 }
 
 function resize(rutaCompleta, nombre){
-    sizes.forEach(size => {
-        formats.forEach(format => {
-            sharp(rutaCompleta).resize(size).toFormat(format, {
-                quality: 80,
-            })
-            .toFile(`${outputDir}${nombre}-${size}.${format}`, (err, info) => {
-                if(err){
-                    console.error("ERROR al generar la imagen ${size}px en formato ${format}:", err);
-                }else{
-                    console.log(`Generada imagen ${size}px en formato ${format}:`, info);
-                }
+    if(nombre.substr(nombre.length - 3) != "svg"){
+        nombre = nombre.slice(0, -5);
+        sizes.forEach(size => {
+            formats.forEach(format => {
+                sharp(rutaCompleta).resize(size).toFormat(format, {
+                    quality: 80,
+                })
+                .toFile(`${outputDir}${nombre}-${size}.${format}`, (err, info) => {
+                    if(err){
+                        console.error("ERROR al generar la imagen ${size}px en formato ${format}:", err);
+                    }else{
+                        console.log(`Generada imagen ${size}px en formato ${format}:`, info);
+                    }
+                });
             });
         });
-    });
+    }
+    
 }
 
 const promises = files.map(imagen => resize('../img/'+imagen, imagen));
