@@ -8,92 +8,203 @@
 </head>
 <body>
     <header>
-        <!-- Logo, concurso tapas, buscador y botón de login -->
-         <div class="auxiliar alinear">
-            <img src="img/logotipo.svg" class="logo"/>
-            <h1>CONCURSO DE TAPAS</h1>
-         </div>
-         <div class="auxiliar alinear">
-            <form action="" >
-                <input type="text">
+        <div class="logo">
+            <img src="img/logotipo.svg" alt="Logotipo">
+            <a href="index.html" class="home-link">Concurso de tapas</a>
+        </div>
+        
+        <div class="buscador">
+            <img src="img/search_64.svg" alt="Buscar">
+            <form action="">
+                <input type="text" placeholder="Buscar tapas...">
             </form>
-            <button ><img src="img/search_64.svg" /></button>
-         </div>
+        </div>
     </header>
-
+ 
     <div class="carrusel">
         <div class="slider_container">
-            <section class="slider">
-                <div class="slide one">
-                    <img src="img/AlitasPollo.webp" alt="Tapa de 5 alitas de pollo">
+            <div class="slider">
+                <div class="slide">
+                    <img
+                        src="imgOptim/AlitasPollo-480.webp"
+                        srcset="
+                            imgOptim/AlitasPollo-480.webp 480w,
+                            imgOptim/AlitasPollo-768.webp 768w,
+                            imgOptim/AlitasPollo-1080.webp 1080w
+                        "
+                        sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1080px"
+                        alt="Tapa de 5 alitas de pollo">
                     <span class="caption">Bar Los Pendones</span>
                 </div>
-                <div class="slide two">
-                    <img src="img/TortillaPro.webp" alt="Tres pinchos de tortilla con pimiento y pan">
+                <div class="slide">
+                    <img
+                        src="imgOptim/TortillaPro-480.webp"
+                        srcset="
+                            imgOptim/TortillaPro-480.webp 480w,
+                            imgOptim/TortillaPro-768.webp 768w,
+                            imgOptim/TortillaPro-1080.webp 1080w
+                        "
+                        sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1080px"
+                        alt="Tres pinchos de tortilla con pimiento y pan">
                     <span class="caption">Taberna del Cid</span>
                 </div>
-                <div class="slide three">
-                    <img src="img/patatasBravas2.webp" alt="Tapa de patatas bravas">
+                <div class="slide">
+                    <img
+                        src="imgOptim/patatasBravas2-480.webp"
+                        srcset="
+                            imgOptim/patatasBravas2-480.webp 480w,
+                            imgOptim/patatasBravas2-768.webp 768w,
+                            imgOptim/patatasBravas2-1080.webp 1080w
+                        "
+                        sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1080px"
+                        alt="Tapa de patatas bravas">
                     <span class="caption">La Cueva del Guzmán</span>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
-    <!-- Imágenes, títulos y descripciones -->
+ 
     <div class="cuadricula">
         <div class="tarjeta">
-            <img src="img/Tortilla1.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/Tortilla-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/Tortilla-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/Tortilla-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/Tortilla-768.webp" alt="Tortilla de patatas">
+            </picture>
+            <div class="info-bar">
+                <h3>Bar La Catedral</h3>
+                <span>Tapa de tortilla de patatas con pimiento y mayonesa.</span>
+            </div>
         </div>
+
         <div class="tarjeta">
-            <img src="img/Pizza1.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/Pizza-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/Pizza-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/Pizza-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/Pizza1-768.webp" alt="Pizza">
+            </picture>
+            <div class="info-bar">
+                <h3>Taberna El rincón</h3>
+                <span>Tapa de pizza de jamón y queso con base de arroz.</span>
+            </div>
         </div>
+
         <div class="tarjeta">
-            <img src="img/patatasBravas1.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/PatatasBravas-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/PatatasBravas-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/PatatasBravas-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/PatatasBravas-768.webp" alt="Patatas bravas">
+            </picture>
+            <div class="info-bar">
+                <h3>Mesón El Húmedo</h3>
+                <span>Tapa de patatas bravas con pimentón.</span>
+            </div>
         </div>
+
         <div class="tarjeta">
-            <img src="img/Oreja1.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/Oreja-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/Oreja-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/Oreja-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/Oreja-768.webp" alt="Tapa de oreja">
+            </picture>
+            <div class="info-bar">
+                <h3>Bar La Plaza</h3>
+                <span>Tapa de orejas de cerdo guisadas.</span>
+            </div>
         </div>
+
         <div class="tarjeta">
-            <img src="img/Morcilla1.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/Morcilla-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/Morcilla-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/Morcilla-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/Morcilla-768.webp" alt="Tapa de morcilla">
+            </picture>
+            <div class="info-bar">
+                <h3>Taberna El Camino</h3>
+                <span>Tapa de morcilla con queso de cabra.</span>
+            </div>
         </div>
+
         <div class="tarjeta">
-            <img src="img/huevos1.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/huevos-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/huevos-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/huevos-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/huevos-768.webp" alt="Patatas con huevo y jamón">
+            </picture>
+            <div class="info-bar">
+                <h3>Bar La Cuevina</h3>
+                <span>Tapa de patatas con huevo y jamón.</span>
+            </div>
         </div>
+
         <div class="tarjeta">
-            <img src="img/croquetas1.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/croquetas-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/croquetas-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/croquetas-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/croquetas-768.webp" alt="Tapa de croquetas">
+            </picture>
+            <div class="info-bar">
+                <h3>La Botica del Vino</h3>
+                <span>Croqueta de Cecina con Corazón de Queso de Valdeón y Miel.</span>
+            </div>
         </div>
+
         <div class="tarjeta">
-            <img src="img/bravas31.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/bravas3-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/bravas3-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/bravas3-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/bravas3-768.webp" alt="Patatas con salsa rosa">
+            </picture>
+            <div class="info-bar">
+                <h3>Bar Las Médulas</h3>
+                <span>Patatas de bastón con salsa rosa.</span>
+            </div>
         </div>
+
         <div class="tarjeta">
-            <img src="img/bocadilloJalapeños1.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/BocadilloJalapeños-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/BocadilloJalapeños-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/BocadilloJalapeños-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/BocadilloJalapeños-768.webp" alt="Bocadillo de jalapeños">
+            </picture>
+            <div class="info-bar">
+                <h3>El Yelmo y la Caña</h3>
+                <span>Bocadillo de jalapeños.</span>
+            </div>
         </div>
+
         <div class="tarjeta centar">
-            <img src="img/albondiga1.webp"/>
-            <p></p>
+            <picture>
+                <source srcset="imgOptim/albondiga-480.webp" media="(max-width: 480px)";>
+                <source srcset="imgOptim/albondiga-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
+                <source srcset="imgOptim/albondiga-1080.webp" media="(min-width: 1080px)";>
+                <img src="imgOptim/albondiga-768.webp" alt="Tapa de albóbndigas">
+            </picture>
+            <div class="info-bar">
+                <h3>La Catedral del Tapeo</h3>
+                <span>Montadito de albóndigas.</span>
+            </div>
         </div>
     </div>
-
+ 
     <footer>
-        <!-- Copyright y redes sociales -->
-         <div>
-            <p>©Concurso de tapas 2024</p>
-         </div>
-         <div>
-            <a href="https://workspace.google.com/intl/es/gmail/"><img src="img/icons8-email-64.svg" alt="emal" class="logo"></a>
+        <div>
+            <p>&copy;Concurso de tapas 2024</p>
+        </div>
+        <div>
+            <a href="https://workspace.google.com/intl/es/gmail/"><img src="img/icons8-email-64.svg" alt="email" class="logo"></a>
             <a href="https://www.instagram.com/"><img src="img/icons8-instagram.svg" alt="instagram" class="logo"></a>
             <a href="https://x.com/"><img src="img/icons8-twitterx.svg" alt="x" class="logo"></a>
         </div>
-         
     </footer>
 </body>
 </html>

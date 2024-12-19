@@ -1,7 +1,6 @@
 const sharp = require('sharp');
 const fs = require('fs');
 
-// const inputImage = '../img/AlitasPollo.webp';
 const files = fs.readdirSync('../img/');
 const outputDir = '../imgOptim/';
 const sizes = [480, 768, 1080];
