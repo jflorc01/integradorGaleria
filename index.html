@@ -9,18 +9,18 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/logotipo.svg" alt="Logotipo">
+            <a href="index.html" class="home-link"><img src="img/logotipo.svg" alt="Logotipo"></a>
             <a href="index.html" class="home-link">Concurso de tapas</a>
         </div>
         
         <div class="buscador">
-            <img src="img/search_64.svg" alt="Buscar">
+            <button id="lupa"><img src="img/search_64.svg" alt="Buscar"></button>
             <form action="">
                 <input type="text" placeholder="Buscar tapas...">
             </form>
         </div>
     </header>
- 
+    
     <div class="carrusel">
         <div class="slider_container">
             <div class="slider">
@@ -70,7 +70,7 @@
                 <source srcset="imgOptim/Tortilla-480.webp" media="(max-width: 480px)";>
                 <source srcset="imgOptim/Tortilla-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
                 <source srcset="imgOptim/Tortilla-1080.webp" media="(min-width: 1080px)";>
-                <img src="imgOptim/Tortilla-768.webp" alt="Tortilla de patatas">
+                <img src="imgOptim/Tortilla-768.webp" alt="Tortilla de patatas" loading="lazy">
             </picture>
             <div class="info-bar">
                 <h3>Bar La Catedral</h3>
@@ -83,7 +83,7 @@
                 <source srcset="imgOptim/Pizza-480.webp" media="(max-width: 480px)";>
                 <source srcset="imgOptim/Pizza-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
                 <source srcset="imgOptim/Pizza-1080.webp" media="(min-width: 1080px)";>
-                <img src="imgOptim/Pizza1-768.webp" alt="Pizza">
+                <img src="imgOptim/Pizza1-768.webp" alt="Pizza" loading="lazy">
             </picture>
             <div class="info-bar">
                 <h3>Taberna El rincón</h3>
@@ -96,7 +96,7 @@
                 <source srcset="imgOptim/PatatasBravas-480.webp" media="(max-width: 480px)";>
                 <source srcset="imgOptim/PatatasBravas-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
                 <source srcset="imgOptim/PatatasBravas-1080.webp" media="(min-width: 1080px)";>
-                <img src="imgOptim/PatatasBravas-768.webp" alt="Patatas bravas">
+                <img src="imgOptim/PatatasBravas-768.webp" alt="Patatas bravas" loading="lazy">
             </picture>
             <div class="info-bar">
                 <h3>Mesón El Húmedo</h3>
@@ -109,7 +109,7 @@
                 <source srcset="imgOptim/Oreja-480.webp" media="(max-width: 480px)";>
                 <source srcset="imgOptim/Oreja-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
                 <source srcset="imgOptim/Oreja-1080.webp" media="(min-width: 1080px)";>
-                <img src="imgOptim/Oreja-768.webp" alt="Tapa de oreja">
+                <img src="imgOptim/Oreja-768.webp" alt="Tapa de oreja" loading="lazy">
             </picture>
             <div class="info-bar">
                 <h3>Bar La Plaza</h3>
@@ -135,7 +135,7 @@
                 <source srcset="imgOptim/huevos-480.webp" media="(max-width: 480px)";>
                 <source srcset="imgOptim/huevos-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
                 <source srcset="imgOptim/huevos-1080.webp" media="(min-width: 1080px)";>
-                <img src="imgOptim/huevos-768.webp" alt="Patatas con huevo y jamón">
+                <img src="imgOptim/huevos-768.webp" alt="Patatas con huevo y jamón" loading="lazy">
             </picture>
             <div class="info-bar">
                 <h3>Bar La Cuevina</h3>
@@ -148,7 +148,7 @@
                 <source srcset="imgOptim/croquetas-480.webp" media="(max-width: 480px)";>
                 <source srcset="imgOptim/croquetas-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
                 <source srcset="imgOptim/croquetas-1080.webp" media="(min-width: 1080px)";>
-                <img src="imgOptim/croquetas-768.webp" alt="Tapa de croquetas">
+                <img src="imgOptim/croquetas-768.webp" alt="Tapa de croquetas" loading="lazy">
             </picture>
             <div class="info-bar">
                 <h3>La Botica del Vino</h3>
@@ -161,7 +161,7 @@
                 <source srcset="imgOptim/bravas3-480.webp" media="(max-width: 480px)";>
                 <source srcset="imgOptim/bravas3-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
                 <source srcset="imgOptim/bravas3-1080.webp" media="(min-width: 1080px)";>
-                <img src="imgOptim/bravas3-768.webp" alt="Patatas con salsa rosa">
+                <img src="imgOptim/bravas3-768.webp" alt="Patatas con salsa rosa" loading="lazy">
             </picture>
             <div class="info-bar">
                 <h3>Bar Las Médulas</h3>
@@ -174,7 +174,7 @@
                 <source srcset="imgOptim/BocadilloJalapeños-480.webp" media="(max-width: 480px)";>
                 <source srcset="imgOptim/BocadilloJalapeños-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
                 <source srcset="imgOptim/BocadilloJalapeños-1080.webp" media="(min-width: 1080px)";>
-                <img src="imgOptim/BocadilloJalapeños-768.webp" alt="Bocadillo de jalapeños">
+                <img src="imgOptim/BocadilloJalapeños-768.webp" alt="Bocadillo de jalapeños" loading="lazy">
             </picture>
             <div class="info-bar">
                 <h3>El Yelmo y la Caña</h3>
@@ -182,12 +182,12 @@
             </div>
         </div>
 
-        <div class="tarjeta centar">
+        <div class="tarjeta centrar">
             <picture>
                 <source srcset="imgOptim/albondiga-480.webp" media="(max-width: 480px)";>
                 <source srcset="imgOptim/albondiga-768.webp" media="(min-width: 481px) and (max-width: 1080px)";>
                 <source srcset="imgOptim/albondiga-1080.webp" media="(min-width: 1080px)";>
-                <img src="imgOptim/albondiga-768.webp" alt="Tapa de albóbndigas">
+                <img src="imgOptim/albondiga-768.webp" alt="Tapa de albóbndigas" loading="lazy">
             </picture>
             <div class="info-bar">
                 <h3>La Catedral del Tapeo</h3>

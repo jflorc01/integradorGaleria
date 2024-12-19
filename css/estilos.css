@@ -11,7 +11,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #fff8e1;
+    background-color: white;
     color: #333;
 }
 
@@ -29,6 +29,17 @@ header img {
     max-height: 50px;
 }
 
+#lupa{
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+}
+
+#lupa:hover{
+    background-color: #d5d5d5;
+    cursor: pointer;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -40,11 +51,6 @@ header img {
     font-weight: bold;
     color: #333; 
     text-decoration: none; 
-}
-
-.home-link:hover {
-    color: #007BFF; 
-   
 }
 
 .buscador {
@@ -67,6 +73,7 @@ header img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    
 }
 
 .slider_container {
@@ -74,10 +81,12 @@ header img {
     max-width: 1200px;
     position: relative;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .slider {
     display: flex;
+    height: 500px;
     transition: transform 0.5s ease-in-out;
     animation: sliding 15s infinite;
 }
@@ -152,6 +161,10 @@ header img {
     border-radius: 4px;
 }
 
+.centrar{
+    grid-column: 2/3;
+}
+
 footer {
     grid-area: footer;
     padding: 1rem;
@@ -172,7 +185,7 @@ footer .logo {
     height: 32px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     header {
         flex-wrap: wrap;
         gap: 1rem;
@@ -200,4 +213,4 @@ footer .logo {
         font-size: 1rem;
         padding: 0.5rem;
     }
-}
+} */
